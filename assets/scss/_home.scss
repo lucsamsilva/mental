@@ -1,0 +1,99 @@
+#home-section {
+    @include spacing-layout;
+
+    .grid-layout {
+        // @include spacing-layout;
+        margin-top: 10vh;
+        @include responsive-tablet {
+            margin-top: 25vh; 
+            
+        }
+
+        
+
+        #home {
+            @include flexbox-between;
+            max-height: 90vh;
+
+            .home-img {
+                img {
+                    position: relative;
+                    right: 45px;
+                    width: 600px;
+                    height: 600px;
+                }
+
+                @include responsive-tablet {
+                    display: none; 
+                }
+            }
+
+            .home-content {
+                @include flexbox-center; 
+                flex-direction: column;
+                position: relative;
+                bottom: 55px;
+
+                h2 {
+                    font-family: 'Homenaje';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 2.9rem;
+                    line-height: 50px;
+                    text-align: center;
+
+                    span {
+                        color: #32CCBC;
+
+                    }
+                }
+
+                p {
+
+                    margin-top: 30px;
+                    text-transform: uppercase;
+                    font-family: 'Homenaje';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 1.7rem;
+                    line-height: 35px;
+                    text-align: justify;
+
+
+                    color: #000000;
+
+                    span {
+                        color: #32CCBC;
+
+                    }
+                }
+
+
+                .btn {
+                    @include btn; 
+                    position: relative; 
+                    top: 140px;
+
+                    @include responsive-tablet {
+                        top: 120px; 
+                    }
+                    
+                }
+
+                @include responsive-tablet {
+                    h2 {
+                        font: {
+                            size: 2.1rem;
+                        }
+                    }
+
+                    p {
+                        font: {
+                            size: 1.2rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

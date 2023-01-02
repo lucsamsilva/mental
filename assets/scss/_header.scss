@@ -2,6 +2,7 @@ header {
     .grid-layout {
         @include spacing-layout;
         position: fixed;
+        z-index: 999;
         width: 100%;
         height: $gap-6;
         background: $bg-second-color;
@@ -10,6 +11,7 @@ header {
         #header {
             @include flexbox-between;
             position: relative;
+            
 
             h1 {
                 text-transform: uppercase;

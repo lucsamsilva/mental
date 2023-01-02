@@ -1,0 +1,31 @@
+#transtorns-section {
+
+    .grid-layout {
+        position: relative;
+        min-height: 90vh;
+        margin-top: 15vh;
+
+        .wave {
+            @include flexbox-center;
+            position: absolute;
+            aspect-ratio: 960/300;
+            width: 100%;
+            height: 100%;
+            align-self: baseline;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+
+
+
+            background-image: url('../images/bg-wave.svg');
+
+
+        }
+
+
+        #transtorns {
+           position: relative;
+        }
+    }
+}
