@@ -1,0 +1,94 @@
+// Colors variables
+
+// background color section
+$bg-color: #f4f2f2;
+$bg-second-color: #fff;
+$primary-color: #000;
+$secondary-color: #32ccbc;
+// text color section
+$text-pcolor: #fff;
+$text-scolor: #000;
+$text-tcolor: #32ccbc;
+
+// Sreens Sizes Media querys
+$small: 480px;
+$medium: 768px;
+$larger: 1025px;
+
+// Gaps section
+$gap-0: 0px;
+$gap-1: 8px;
+$gap-2: 16px;
+$gap-3: 24px;
+$gap-4: 32px;
+$gap-5: 72px;
+$gap-6: 124px;
+
+// Spacing layout
+@mixin spacing-layout {
+    padding: $gap-4 $gap-6;
+    @include responsive-tablet {
+        padding: $gap-4 $gap-5;
+    }
+}
+
+// Responsive section
+@mixin responsive-desktop {
+    @media screen and (max-width: $larger) {
+        @content;
+    }
+}
+
+@mixin responsive-tablet {
+    @media screen and (max-width: $medium) {
+        @content;
+    }
+}
+
+@mixin responsive-mobile {
+    @media screen and (max-width: $small) {
+        @content;
+    }
+}
+
+// Flexbox Section
+
+@mixin flexbox-center {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@mixin flexbox-around {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+@mixin flexbox-between {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+// Animations Section
+
+ 
+@mixin hover-link() {
+    &::after {
+      content: "";
+      position: absolute;
+      width: 100%;
+      transform: scaleX(0);
+      height: 1px;
+      bottom: -7px;
+      left: 0;
+      background: linear-gradient(270deg, $text-tcolor 0%, $text-tcolor 100%);
+      transform-origin: bottom right;
+      transition: transform 0.5s cubic-bezier(0.86, 0, 0.07, 1);
+    }
+    &:hover::after {
+      transform: scaleX(1);
+      transform-origin: bottom left;
+   }
+}

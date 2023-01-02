@@ -1,0 +1,26 @@
+*{padding:0;margin:0;-webkit-box-sizing:border-box;box-sizing:border-box}html,body{height:100%;width:100%}header .grid-layout{padding:32px 124px;position:fixed;width:100%;height:124px;background:#fff;border-bottom:2px solid rgba(50,204,189,.7098039216)}@media screen and (max-width: 768px){header .grid-layout{padding:32px 72px}}header .grid-layout #header{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between;-webkit-box-align:center;-ms-flex-align:center;align-items:center}header .grid-layout #header h1{text-transform:uppercase;width:201px;height:60px;font-family:"Hermeneus One";font-style:normal;font-weight:400;font-size:50px;line-height:60px;color:#32ccbc}@media screen and (max-width: 768px){header .grid-layout #header h1{font-size:35px}}header .grid-layout #header .nav{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-ms-flex-wrap:wrap;flex-wrap:wrap;list-style:none}header .grid-layout #header .nav .nav-list{position:relative;margin-left:24px}header .grid-layout #header .nav .nav-list::after{content:"";position:absolute;width:100%;-webkit-transform:scaleX(0);transform:scaleX(0);height:1px;bottom:-7px;left:0;background:-webkit-gradient(linear, right top, left top, from(#32ccbc), to(#32ccbc));background:linear-gradient(270deg, #32ccbc 0%, #32ccbc 100%);-webkit-transform-origin:bottom right;transform-origin:bottom right;-webkit-transition:-webkit-transform .5s cubic-bezier(0.86, 0, 0.07, 1);transition:-webkit-transform .5s cubic-bezier(0.86, 0, 0.07, 1);transition:transform .5s cubic-bezier(0.86, 0, 0.07, 1);transition:transform .5s cubic-bezier(0.86, 0, 0.07, 1), -webkit-transform .5s cubic-bezier(0.86, 0, 0.07, 1)}header .grid-layout #header .nav .nav-list:hover::after{-webkit-transform:scaleX(1);transform:scaleX(1);-webkit-transform-origin:bottom left;transform-origin:bottom left}header .grid-layout #header .nav .nav-list a{width:246px;height:46px;color:#000;text-decoration:none;font-size:1.5em;font-weight:400;font-style:normal;font-family:"IBM Plex Sans";font-height:46px}header .grid-layout #header .nav .nav-list a:hover{color:#32ccbc}@media screen and (max-width: 768px){header .grid-layout #header .nav .nav-list a{font-size:1.2em;font-weight:bold}}body{background-color:#f4f2f2}origin: bottom left;
+}
+header .grid-layout #header .nav .nav-list a {
+  width: 246px;
+  height: 46px;
+  color: #000;
+  text-decoration: none;
+  font-size: 1.5em;
+  font-weight: 400;
+  font-style: normal;
+  font-family: "IBM Plex Sans";
+  font-height: 46px;
+}
+header .grid-layout #header .nav .nav-list a:hover {
+  color: #32ccbc;
+}
+@media screen and (max-width: 768px) {
+  header .grid-layout #header .nav .nav-list a {
+    font-size: 1.2em;
+    font-weight: bold;
+  }
+}
+
+body {
+  background-color: #f4f2f2;
+}
