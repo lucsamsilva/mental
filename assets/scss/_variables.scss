@@ -11,9 +11,9 @@ $text-scolor: #000;
 $text-tcolor: #32ccbc;
 
 // Sreens Sizes Media querys
-$small: 480px;
+$small: 412px;
 $medium: 768px;
-$larger: 1025px;
+$larger: 1024px;
 
 // Gaps section
 $gap-0: 0px;
@@ -34,7 +34,7 @@ $gap-6: 124px;
 
 // Responsive section
 @mixin responsive-desktop {
-    @media screen and (max-width: $larger) {
+    @media screen and (min-width: $larger) {
         @content;
     }
 }
