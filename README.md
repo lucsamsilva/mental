@@ -1,5 +1,7 @@
 <h1 align="center">MENTAL</h1>
 
+![Resultado final do projeto](assets/images/preview.svg)
+
 --- 
 
 <p align="center">Mental is a website made to introdce about mental transtorns.</p>
